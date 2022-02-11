@@ -7,13 +7,15 @@
     <meta name="description" content="Data Warehouse is a data storage area that has been
     tested for security, so you can store your data here
     safely but not be afraid of being stolen by others.">
-    <meta name="Keywords" content="warehouse, save, data, security, storage, area"> 
+    <meta name="Keywords" content="warehouse, save, data, security, storage, area">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warehouse - Save your data storage here.</title>
     <script src="https://kit.fontawesome.com/ea913ff68b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- в разметке не применяются теги (html5) main, section, article и тп -->
+<!-- именование не по БЭМ (block-name__elem-name_mod-name) -->
     <div class="header">
         <div class="logo">
             <img src="img/Logo.png" alt="Logo">
@@ -26,6 +28,7 @@
             </ul>
         </div>
     </div>
+<!-- about, help, features, testimonials - это section, каждая section должно задержать заголовок это как правило всегда h2 -->
     <div class="content">
         <div class="about" id="about-block">
             <div class="about-img">
@@ -41,7 +44,7 @@
                 <div class="about-btn"><a href="#features-block">Learn more</a></div>
             </div>
 
-            
+
         </div>
         <div class="help">
             <div class="help-img">
@@ -71,11 +74,11 @@
                             Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.
                         </div>
                         <div class="f-btn"><a href="/">Learn more <img src="img/arrow-right-purple.png" alt="arrow"></a></div>
-                        
+
                     </div>
-                    
+
                 </div>
-                
+
                 <div class="features-block access">
                     <div class="f-img">
                         <img src="img/image4.png" alt="image4">
@@ -87,7 +90,7 @@
                         </div>
                         <div class="f-btn"><a href="/">Learn more <img src="img/arrow-right-purple.png" alt="arrow"></a></div>
                     </div>
-                    
+
                 </div>
 
                 <div class="features-block print-out">
@@ -170,17 +173,19 @@
                     <div class="arrow-left"><img src="img/arrow-left.png" alt="left"></div>
                     <div class="arrow-right"><img src="img/arrow-right.png" alt="right"></div>
                 </div>
-                
+
             </div>
 
         </div>
     </div>
     <div class="footer" id="help-block">
         <div class="contacts">
+            <!--     class="footer-logo" не может находится внутри class="contacts" (это не БЭМ),  logo это отдельный блок     -->
             <div class="footer-logo">
                 <img src="img/Logo.png" alt="Logo">
                 <p>DataWarehouse</p>
             </div>
+            <!--    применение <br> плохая практика, перенос стилями при помощи max-width      -->
             <div class="address">
                 Warehouse Society, 234 <br>Bahagia Ave Street PRBW 29281
             </div>
@@ -197,12 +202,19 @@
         </div>
         <div class="social">
             <p>Social Media</p>
+<!--  такое <a href="/"><div class="soc_media social1"><img src="img/facebook.png" alt="FB"></div></a> надо форматировать:
+                <a href="/">
+                    <div class="soc_media social1">
+                        <img src="img/facebook.png" alt="FB">
+                    </div>
+                </a>
+  -->
             <div class="social-block">
                 <a href="/"><div class="soc_media social1"><img src="img/facebook.png" alt="FB"></div></a>
                 <a href="/"><div class="soc_media social2"><img src="img/Insta.png" alt="Inst"></div></a>
                 <a href="/"><div class="soc_media social3"><img src="img/twitter.png" alt="Twitter"></div></a>
             </div>
-            
+
         </div>
     </div>
 </body>
