@@ -7,12 +7,18 @@ html {
     overflow-x: hidden;
 }
 body{
+    /* семейство шрифтов не имеет общего значения по умолчанию serif или sans-serif */
     font-family: Ubuntu;
+    /* max-width задается в контейнере, в body надо указать min-width */
     max-width: 1200px;
+    /* у body не должно быть margin и padding, так же не подключен normalize.css  */
     margin: auto;
     padding: 15px;
+    /* цвета надо выносить в переменные */
     color: #212353;
 }
+/* общие стили надо делать без body  */
+/* нет общего стиля для контейнера */
 body a{
     text-decoration: none;
     color: #212353;
@@ -21,6 +27,9 @@ body .header{
     display: flex;
     padding: 10px 0;
 }
+/* много последовательных селекторов их потом сложно переопределить, что бы этого избежать надо вешать класс на теги
+    на тэг а вешаем класс для примера - class="footer__link" или  class="contacts__link" смотря как называется блок
+ */
 .footer .contacts .email a,
 .footer .contacts .phone a,
 body .header a{
@@ -122,6 +131,7 @@ body .header .menu ul li {
 }
 
 .content .help .help-main{
+    /* padding: 0 80px 0 50px; если 0 то не надо px */
     padding: 0px 80px 0 50px;
 }
 .content .help .help-main h2{
@@ -201,6 +211,7 @@ body .header .menu ul li {
     line-height: 22px;
     display: flex;
     align-items: center;
+    /* 2? - 2px? */
     letter-spacing: 2;
     color: #9C69E2;
 }
@@ -497,7 +508,7 @@ body .header .menu ul li {
     .content .about .about-img img{
         width: 100%;
     }
-} 
+}
 @media (max-width: 1024px){
     .content .about .about-main{
         width: 35%;
@@ -528,12 +539,12 @@ body .header .menu ul li {
     }
 
     .content .testimonials .t-slide.slide1,
-    .content .testimonials .t-slide.slide2, 
+    .content .testimonials .t-slide.slide2,
     .content .testimonials .t-slide.slide3{
         width: unset;
         height: unset;
     }
-} 
+}
 @media (min-width:768px) and (max-width: 1023px){
     .content .about .about-main h1,
     .content .help .help-main h2 {
@@ -580,7 +591,7 @@ body .header .menu ul li {
         font-size: 16px;
     }
 
-} 
+}
 @media (max-width: 767px){
     .content .about .about-main {
         width: 100%;
@@ -596,7 +607,7 @@ body .header .menu ul li {
     .content .help .help-main {
         padding: 0px 30px 30px 30px;
     }
-    .content .testimonials .t-slide.slide2, 
+    .content .testimonials .t-slide.slide2,
     .content .testimonials .t-slide.slide3{
         display: none;
     }
@@ -609,8 +620,8 @@ body .header .menu ul li {
     .features .features-blocks .features-block{
         max-width: 100%;
     }
-    
-} 
+
+}
 @media (max-width: 570px){
     .content .about {
         margin-bottom: 20px;
@@ -675,8 +686,8 @@ body .header .menu ul li {
     .features .features-desc{
         font-size: 14px;
     }
-    
-} 
+
+}
 @media (max-width: 375px){
     body .header .menu ul li {
         margin: 0 10px;
