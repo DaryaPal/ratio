@@ -8,16 +8,18 @@
         <meta name="description" content="Data Warehouse is a data storage area that has been
         tested for security, so you can store your data here
         safely but not be afraid of being stolen by others.">
-        <meta name="Keywords" content="warehouse, save, data, security, storage, area"> 
+        <meta name="Keywords" content="warehouse, save, data, security, storage, area">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Warehouse - Save your data storage here.</title>
+        <!-- TODO: если вы подключаете скрипт сверху. Нужно делать асинхронную загрузку через атрибут 'async' -->
         <script src="https://kit.fontawesome.com/ea913ff68b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
             <div class="header">
                 <div class="header__logo">
+                    <!-- TODO: вижу, что есть проблемы с наименованием классов. Отпишу в PR -->
                     <img class= "header__logo__img" src="img/Logo.png" alt="Logo">
                 </div>
                 <div class="header__menu">
@@ -31,6 +33,7 @@
             <div class="content">
                 <section class="content__about" id="about__block">
                     <div class="content__about__img">
+                        <!-- TODO: нужно более конкретное название в атрибуте 'alt' -->
                         <img class="content__about__image" src="img/image1.png" alt="image1">
                     </div>
                     <div class="content__about__main">
@@ -70,11 +73,11 @@
                                     Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.
                                 </div>
                                 <div class="features__blocks__item__btn"><a class="features__blocks__item__btn__a" href="/">Learn more <img class="features__blocks__item__btn__img" src="img/arrow-right-purple.png" alt="arrow"></a></div>
-                                
+
                             </div>
-                            
+
                         </div>
-                        
+
                         <div class="features__blocks__item access">
                             <div class="features__blocks__item__img">
                                 <img class="features__blocks__item__image" src="img/image4.png" alt="image4">
@@ -86,7 +89,7 @@
                                 </div>
                                 <div class="features__blocks__item__btn"><a class="features__blocks__item__btn__a" href="/">Learn more <img class="features__blocks__item__btn__img" src="img/arrow-right-purple.png" alt="arrow"></a></div>
                             </div>
-                            
+
                         </div>
 
                         <div class="features__blocks__item print-out">
@@ -172,8 +175,9 @@
                     </div>
                 </section>
             </div>
-
+            <!-- TODO: здесь можно было использовать семантический тег <footer> -->
             <div class="footer" id="help__block">
+                <!-- TODO: многовато секций в одном футере -->
                 <section class="footer__logo">
                     <img class="footer__logo__img" src="img/Logo.png" alt="Logo">
                     <p>DataWarehouse</p>
@@ -197,6 +201,7 @@
                 <section class="footer__social">
                     <p>Social Media</p>
                     <div class="footer__social__block">
+                        <!-- TODO: ссылки, которые никуда не ведут, лучше обозначать через хэш 'href="#"' -->
                         <a href="/"><div class="footer__social__media social1"><img class="footer__social__media__img" src="img/facebook.png" alt="FB"></div></a>
                         <a href="/"><div class="footer__social__media social2"><img class="footer__social__media__img" src="img/Insta.png" alt="Inst"></div></a>
                         <a href="/"><div class="footer__social__media social3"><img class="footer__social__media__img" src="img/twitter.png" alt="Twitter"></div></a>
